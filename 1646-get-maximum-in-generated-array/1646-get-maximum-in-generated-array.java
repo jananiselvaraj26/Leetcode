@@ -9,11 +9,14 @@ class Solution {
         nums[2]=1;
             int max=1;
             for(int i=3;i<=n;i++){
+                
+                int first=nums[(i/2)];
+                int second=nums[(i/2)+1];
                 if(i%2==0){
-                    nums[i]=nums[i/2];
+                    nums[i]=first;
                 }
                 else{
-                    nums[i]=nums[(i/2)]+ nums[(i/2)+1];
+                    nums[i]=first+second;
                 }
                 max=Math.max(max,nums[i]);
             }
