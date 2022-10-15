@@ -6,12 +6,12 @@ class Solution {
         int o=1;
         int u=1;
         
-        for(int j=1;j<=n;j++){
+        while(n>0){
             o=o+u;
             i=i+o;
             e=e+i;
             a=a+e;
-            
+            n--;
         }
         return a;
     }
