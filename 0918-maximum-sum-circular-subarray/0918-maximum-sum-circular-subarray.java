@@ -20,10 +20,10 @@ class Solution {
                 arrSum+=nums[i];
                 nums[i]=-nums[i];
             }
-            int circularSum=arrSum+(kadane(nums));
+            arrSum+=(kadane(nums));
             
             
-            return Math.max(circularSum,normalMax);
+            return Math.max(arrSum,normalMax);
         }
         
     }
